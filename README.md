@@ -122,7 +122,7 @@ También se generaron gráficos con Matplotlib para visualizar:
 
 * Clientes con mayores compras
 
-# Ejemplo de código utilizado:
+Ejemplo de código utilizado:
 ``` bash
 conn = sql.connect(DB_PATH)
 
@@ -221,7 +221,7 @@ python python/analysis_sales.py
 
 ---
 
-#👨‍💻 Autor
+# 👨‍💻 Autor
 
 Lautaro Luchesi
 
