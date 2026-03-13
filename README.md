@@ -78,13 +78,13 @@ Entre los análisis realizados:
 
 * ingresos totales
 
-* ventas por producto
+* Ventas por producto
 
-* ventas por empleado
+* Ventas por empleado
 
-* ventas por cliente
+* Ventas por cliente
 
-* ventas por mes
+* Ventas por mes
 
 * Ejemplo de consulta SQL:
 ``` bash
@@ -163,7 +163,7 @@ El dashboard permite explorar los datos mediante filtros por:
 
 # 📈 Vista del Dashboard
 
-<img src="images/dashboard.png" alt="DashBoard" width="600">
+<img src="images/dashboard.png" alt="DashBoard" width="700">
 
 ---
 
