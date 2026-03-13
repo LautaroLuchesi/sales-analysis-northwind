@@ -39,15 +39,15 @@ Durante el análisis se buscaron responder las siguientes preguntas:
 
 Las herramientas utilizadas en este proyecto son:
 
-# SQL (SQLite) → extracción y agregación de datos
+* SQL (SQLite) → extracción y agregación de datos
 
-# Python → análisis exploratorio de datos
+* Python → análisis exploratorio de datos
 
-# Pandas → manipulación de datos
+* Pandas → manipulación de datos
 
-# Matplotlib → visualización de datos
+* Matplotlib → visualización de datos
 
-# Power BI → creación de dashboard interactivo
+* Power BI → creación de dashboard interactivo
 
 ---
 
