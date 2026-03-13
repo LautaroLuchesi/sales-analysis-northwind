@@ -3,7 +3,7 @@
 ---
 # 📈 Vista del Dashboard
 
-<img src="images/dashboard.png" alt="DashBoard" width="700">
+<img src="images/dashboard.png" alt="DashBoard" width="800">
 ---
 
 # 📌 Descripción del Proyecto
