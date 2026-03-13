@@ -239,4 +239,4 @@ Estudiante de programación enfocado en análisis de datos y desarrollo de proye
 
 # 🧠 Comentario final
 
-Este proyecto forma parte de mi proceso de aprendizaje en análisis de datos, aplicando herramientas comunes de la industria para transformar datos en información útil para la toma de decisiones.# sales-analysis-northwind
+Este proyecto forma parte de mi proceso de aprendizaje en análisis de datos, aplicando herramientas comunes de la industria para transformar datos en información útil para la toma de decisiones.
