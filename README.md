@@ -233,7 +233,7 @@ Estudiante de programación enfocado en análisis de datos y desarrollo de proye
 
 * Power BI
 
-* visualización de datos
+* Visualización de datos
 
 * Análisis de negocio
 
