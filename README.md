@@ -227,7 +227,7 @@ Lautaro Luchesi
 
 Estudiante de programación enfocado en análisis de datos y desarrollo de proyectos utilizando:
 
-*Python
+* Python
 
 * SQL
 
