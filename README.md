@@ -12,15 +12,15 @@ Este proyecto analiza datos de ventas de la base de datos Northwind utilizando S
 
 El objetivo es explorar el desempeño comercial de la empresa y responder preguntas clave sobre:
 
-- ingresos totales
+* Ingresos totales
 
-- Productos más vendidos
+* Productos más vendidos
 
-- Desempeño de empleados
+* Desempeño de empleados
 
-- Clientes más importantes
+* Clientes más importantes
 
-- Evolución de ventas en el tiempo
+* Evolución de ventas en el tiempo
 
 El proyecto muestra un flujo completo de análisis de datos, desde la consulta de la base de datos hasta la creación de un dashboard interactivo.
 
@@ -174,8 +174,11 @@ El dashboard permite explorar los datos mediante filtros por:
 A partir del análisis se pueden observar algunos patrones:
 
 * Un pequeño grupo de productos concentra gran parte de los ingresos.
+
 * Algunos empleados generan significativamente más ventas que otros.
+
 * Las ventas no están distribuidas de forma uniforme entre los clientes.
+
 * Existen variaciones en las ventas según el mes.
 
 Estos hallazgos permiten entender mejor el desempeño comercial de la empresa.
