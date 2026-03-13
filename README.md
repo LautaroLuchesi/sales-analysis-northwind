@@ -1,4 +1,11 @@
 # 📊 Análisis de Ventas — Dataset Northwind
+
+---
+# 📈 Vista del Dashboard
+
+<img src="images/dashboard.png" alt="DashBoard" width="700">
+---
+
 # 📌 Descripción del Proyecto
 
 Este proyecto analiza datos de ventas de la base de datos Northwind utilizando SQL, Python y Power BI.
@@ -159,11 +166,6 @@ El dashboard permite explorar los datos mediante filtros por:
 
 * Mes
 
----
-
-# 📈 Vista del Dashboard
-
-<img src="images/dashboard.png" alt="DashBoard" width="700">
 
 ---
 
@@ -195,6 +197,27 @@ Este proyecto demuestra conocimientos en:
 * Construcción de dashboards en Power BI
 
 * Pensamiento analítico
+
+---
+
+## Cómo ejecutar el análisis en Python
+
+1. Clonar el repositorio:
+``` bash
+git clone https://github.com/LautaroLuchesi/sales-analysis-northwind.git
+```
+2. Entrar al proyecto:
+``` bash
+cd sales-analysis-northwind
+```
+3. Instalar dependencias:
+``` bash
+pip install pandas matplotlib
+```
+4. Ejecutar el script:
+``` bash
+python python/analysis_sales.py
+```
 
 ---
 
