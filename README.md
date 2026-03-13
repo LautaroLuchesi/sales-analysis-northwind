@@ -1,52 +1,59 @@
-📊 Análisis de Ventas — Dataset Northwind
-📌 Descripción del Proyecto
+# 📊 Análisis de Ventas — Dataset Northwind
+# 📌 Descripción del Proyecto
 
 Este proyecto analiza datos de ventas de la base de datos Northwind utilizando SQL, Python y Power BI.
 
 El objetivo es explorar el desempeño comercial de la empresa y responder preguntas clave sobre:
 
-ingresos totales
+- ingresos totales
 
-productos más vendidos
+- Productos más vendidos
 
-desempeño de empleados
+- Desempeño de empleados
 
-clientes más importantes
+- Clientes más importantes
 
-evolución de ventas en el tiempo
+- Evolución de ventas en el tiempo
 
 El proyecto muestra un flujo completo de análisis de datos, desde la consulta de la base de datos hasta la creación de un dashboard interactivo.
 
-🎯 Preguntas de Negocio
+---
+
+# 🎯 Preguntas de Negocio
 
 Durante el análisis se buscaron responder las siguientes preguntas:
 
-¿Cuánto dinero genera la empresa en ventas?
+* ¿Cuánto dinero genera la empresa en ventas?
 
-¿Qué productos generan mayores ingresos?
+* ¿Qué productos generan mayores ingresos?
 
-¿Qué empleados realizan más ventas?
+* ¿Qué empleados realizan más ventas?
 
-¿Cuáles son los clientes más importantes?
+* ¿Cuáles son los clientes más importantes?
 
-¿Cómo evolucionan las ventas a lo largo del tiempo?
+* ¿Cómo evolucionan las ventas a lo largo del tiempo?
 
-🛠 Tecnologías Utilizadas
+---
+
+# 🛠 Tecnologías Utilizadas
 
 Las herramientas utilizadas en este proyecto son:
 
-SQL (SQLite) → extracción y agregación de datos
+# SQL (SQLite) → extracción y agregación de datos
 
-Python → análisis exploratorio de datos
+# Python → análisis exploratorio de datos
 
-Pandas → manipulación de datos
+# Pandas → manipulación de datos
 
-Matplotlib → visualización de datos
+# Matplotlib → visualización de datos
 
-Power BI → creación de dashboard interactivo
+# Power BI → creación de dashboard interactivo
 
-📂 Estructura del Proyecto
+---
 
+# 📂 Estructura del Proyecto
+
+```bash
 sales-analysis-northwind/
     data/
         northwind.db
@@ -59,26 +66,28 @@ sales-analysis-northwind/
     images/
         dashboard.png
     README.md
+```
+---
 
-🔎 Flujo del Análisis
+# 🔎 Flujo del Análisis
 1️⃣ SQL — Extracción de Datos
 
 Se utilizaron consultas SQL para obtener métricas clave de la base de datos.
 
 Entre los análisis realizados:
 
-ingresos totales
+* ingresos totales
 
-ventas por producto
+* ventas por producto
 
-ventas por empleado
+* ventas por empleado
 
-ventas por cliente
+* ventas por cliente
 
-ventas por mes
+* ventas por mes
 
-Ejemplo de consulta SQL:
-
+* Ejemplo de consulta SQL:
+``` bash
 SELECT 
     p.ProductName,
     SUM(p.Price * od.Quantity) AS total_sales
@@ -88,7 +97,9 @@ JOIN Products p
 GROUP BY p.ProductID, p.ProductName
 ORDER BY total_sales DESC
 LIMIT 10;
+```
 
+---
 
 2️⃣ Python — Análisis Exploratorio
 
@@ -96,16 +107,16 @@ Python fue utilizado para conectarse a la base de datos y realizar un análisis 
 
 También se generaron gráficos con Matplotlib para visualizar:
 
-productos más vendidos
+* Productos más vendidos
 
-ventas por empleado
+* Ventas por empleado
 
-ventas mensuales
+* Ventas mensuales
 
-clientes con mayores compras
+* Clientes con mayores compras
 
-Ejemplo de código utilizado:
-
+# Ejemplo de código utilizado:
+``` bash
 conn = sql.connect(DB_PATH)
 
 df_top_products = pd.read_sql_query(query_top_products, conn)
@@ -115,6 +126,8 @@ df_top_products.plot(
     y="total_sales",
     kind="bar"
 )
+```
+---
 
 3️⃣ Power BI — Dashboard Interactivo
 
@@ -122,44 +135,46 @@ Finalmente se creó un dashboard en Power BI para visualizar la información de 
 
 El dashboard incluye:
 
-KPI principales
+* KPI principales
 
-Ventas totales
+* Ventas totales
 
-Órdenes totales
+* Órdenes totales
 
-Unidades vendidas
+* Unidades vendidas
 
-Ticket promedio
+* Ticket promedio
 
-Visualizaciones
+* Visualizaciones
 
-productos más vendidos
+* Productos más vendidos
 
-ventas por empleado
-
-clientes principales
-
-evolución de ventas por mes
+* Evolución de ventas por mes
 
 El dashboard permite explorar los datos mediante filtros por:
 
-empleado
+* Empleado
 
-producto
+* Producto
 
-mes
+* Mes
 
-📈 Vista del Dashboard
+---
 
-📊 Principales Hallazgos
+# 📈 Vista del Dashboard
+
+<img src="images/dashboard.png" alt="DashBoard" width="600">
+
+---
+
+# 📊 Principales Hallazgos
 
 A partir del análisis se pueden observar algunos patrones:
 
-• Un pequeño grupo de productos concentra gran parte de los ingresos.
-• Algunos empleados generan significativamente más ventas que otros.
-• Las ventas no están distribuidas de forma uniforme entre los clientes.
-• Existen variaciones en las ventas según el mes.
+* Un pequeño grupo de productos concentra gran parte de los ingresos.
+* Algunos empleados generan significativamente más ventas que otros.
+* Las ventas no están distribuidas de forma uniforme entre los clientes.
+* Existen variaciones en las ventas según el mes.
 
 Estos hallazgos permiten entender mejor el desempeño comercial de la empresa.
 
@@ -167,36 +182,38 @@ Estos hallazgos permiten entender mejor el desempeño comercial de la empresa.
 
 Este proyecto demuestra conocimientos en:
 
-consultas SQL
+* Consultas SQL
 
-análisis de datos
+* Análisis de datos
 
-manejo de bases de datos relacionales
+* Manejo de bases de datos relacionales
 
-análisis con Python
+* Análisis con Python
 
-visualización de datos
+* Visualización de datos
 
-construcción de dashboards en Power BI
+* Construcción de dashboards en Power BI
 
-pensamiento analítico
+* Pensamiento analítico
 
-👨‍💻 Autor
+---
+
+#👨‍💻 Autor
 
 Lautaro Luchesi
 
 Estudiante de programación enfocado en análisis de datos y desarrollo de proyectos utilizando:
 
-Python
+*Python
 
-SQL
+* SQL
 
-Power BI
+* Power BI
 
-visualización de datos
+* visualización de datos
 
-análisis de negocio
+* Análisis de negocio
 
-🧠 Comentario final
+# 🧠 Comentario final
 
 Este proyecto forma parte de mi proceso de aprendizaje en análisis de datos, aplicando herramientas comunes de la industria para transformar datos en información útil para la toma de decisiones.# sales-analysis-northwind
