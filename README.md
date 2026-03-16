@@ -135,15 +135,19 @@ El dashboard incluye:
 El análisis revela varios patrones interesantes en el desempeño comercial:
 
 **Concentración de ingresos**
+
 Un pequeño grupo de productos genera una gran proporción de las ventas totales.
 
 **Desempeño desigual entre empleados**
+
 Algunos empleados generan significativamente más ventas que otros.
 
 **Clientes de alto valor**
+
 Una parte reducida de los clientes concentra gran parte del volumen de compras.
 
 **Variación temporal**
+
 Las ventas muestran cambios a lo largo del tiempo que podrían estar asociados a demanda o estacionalidad.
 
 ---
