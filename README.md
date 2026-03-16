@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📊 Análisis de Ventas — Dataset Northwind
 
 ---
@@ -23,42 +24,187 @@ El objetivo es explorar el desempeño comercial de la empresa y responder pregun
 * Evolución de ventas en el tiempo
 
 El proyecto muestra un flujo completo de análisis de datos, desde la consulta de la base de datos hasta la creación de un dashboard interactivo.
+=======
+# 📊 Sales Analysis — Northwind Dataset
+>>>>>>> 39fdd20 (Commit 8 - Cambiando README)
 
 ---
 
-# 🎯 Preguntas de Negocio
+## 📈 Dashboard Overview
 
-Durante el análisis se buscaron responder las siguientes preguntas:
-
-* ¿Cuánto dinero genera la empresa en ventas?
-
-* ¿Qué productos generan mayores ingresos?
-
-* ¿Qué empleados realizan más ventas?
-
-* ¿Cuáles son los clientes más importantes?
-
-* ¿Cómo evolucionan las ventas a lo largo del tiempo?
+<img src="images/dashboard.png" alt="Dashboard" width="850">
 
 ---
 
-# 🛠 Tecnologías Utilizadas
+## 🧠 Business Context
 
-Las herramientas utilizadas en este proyecto son:
+Las empresas generan grandes volúmenes de datos de ventas, pero sin análisis adecuado resulta difícil identificar qué productos, clientes o empleados impulsan realmente los ingresos.
 
-* SQL (SQLite) → extracción y agregación de datos
+Este proyecto analiza el dataset **Northwind** con el objetivo de transformar datos de ventas en **información accionable para la toma de decisiones comerciales**.
 
-* Python → análisis exploratorio de datos
+El análisis busca identificar:
 
-* Pandas → manipulación de datos
-
-* Matplotlib → visualización de datos
-
-* Power BI → creación de dashboard interactivo
+* Qué productos generan mayor impacto en los ingresos.  
+* Qué clientes aportan más valor al negocio.  
+* Qué empleados impulsan el desempeño comercial.  
+* Cómo evolucionan las ventas en el tiempo. 
 
 ---
 
-# 📂 Estructura del Proyecto
+## 🎯 Business Problem
+
+Una empresa necesita entender **qué factores están impulsando sus ventas** para poder tomar decisiones estratégicas como:
+
+* Priorizar productos rentables.  
+* Identificar clientes clave.  
+* Mejorar el desempeño del equipo comercial. 
+
+Sin un análisis adecuado, estas decisiones se toman con información incompleta.
+
+---
+
+## 🔎 Data Analysis Approach
+
+El análisis se realizó siguiendo un flujo típico de **data analytics**:
+
+### 1️⃣ Extracción de datos con SQL.
+
+Se realizaron consultas sobre la base de datos relacional para calcular métricas clave como:
+
+* Ingresos totales.  
+* Ventas por producto.  
+* Ventas por empleado.
+* Ventas por cliente.
+* Evolución mensual de ventas.
+
+**Ejemplo de consulta:**
+
+```bash
+SELECT 
+    p.ProductName,
+    SUM(p.Price * od.Quantity) AS total_sales
+FROM OrderDetails od
+JOIN Products p 
+    ON od.ProductID = p.ProductID
+GROUP BY p.ProductID, p.ProductName
+ORDER BY total_sales DESC
+LIMIT 10;
+```
+---
+
+### 2️⃣ Exploración y análisis con Python
+
+Se utilizó **Python y Pandas** para analizar los datos extraídos desde la base de datos.
+
+Durante el análisis se exploraron patrones en:
+
+* Productos más rentables.
+
+* Ventas por empleado.
+
+* Clientes con mayor volumen de compra.
+
+* Comportamiento de ventas por mes.
+
+Las visualizaciones exploratorias se realizaron con **Matplotlib.**
+
+Ejemplo de código:
+
+df_top_products = pd.read_sql_query(query_top_products, conn)
+
+```bash
+df_top_products.plot(
+    x="ProductName",
+    y="total_sales",
+    kind="bar"
+)
+```
+
+---
+
+### 3️⃣ Visualización con Power BI
+
+Finalmente se desarrolló un **dashboard interactivo en Power BI** para facilitar la exploración de los datos.
+
+El dashboard incluye:
+
+**KPI principales:**
+
+* Total de ventas.
+
+* Total de órdenes.
+
+* Unidades vendidas.
+
+* Ticket promedio.
+
+**Visualizaciones:**
+
+* Top productos.
+
+* Evolución de ventas en el tiempo.
+
+* Ventas por empleado.
+
+* Clientes con mayores compras.
+
+**Además permite filtrar la información por:**
+
+* Empleado.
+
+* Producto.
+
+* Mes.
+
+---
+
+### 📊 Key Insights
+
+El análisis revela varios patrones interesantes en el desempeño comercial:
+
+**Concentración de ingresos**
+Un pequeño grupo de productos genera una gran proporción de las ventas totales.
+
+**Desempeño desigual entre empleados**
+Algunos empleados generan significativamente más ventas que otros.
+
+**Clientes de alto valor**
+Una parte reducida de los clientes concentra gran parte del volumen de compras.
+
+**Variación temporal**
+Las ventas muestran cambios a lo largo del tiempo que podrían estar asociados a demanda o estacionalidad.
+
+---
+
+### 💡 Business Recommendations
+
+A partir de los resultados del análisis, una empresa podría considerar:
+
+* Priorizar estrategias comerciales en los productos más rentables.
+
+* Fortalecer relaciones con clientes de mayor valor.
+
+* Analizar las prácticas de los empleados con mayor desempeño.
+
+* Investigar patrones temporales para optimizar campañas comerciales.
+
+---
+
+### 🛠 Technologies Used
+
+**SQL (SQLite)** — extracción y agregación de datos.
+
+**Python** — análisis de datos.
+
+**Pandas** — manipulación de datos.
+
+**Matplotlib** — visualización exploratoria.
+
+**Power BI** — dashboard interactivo.
+
+---
+
+### 📂 Project Structure
 
 ```bash
 sales-analysis-northwind/
@@ -74,105 +220,32 @@ sales-analysis-northwind/
         dashboard.png
     README.md
 ```
----
-
-# 🔎 Flujo del Análisis
-1️⃣ SQL — Extracción de Datos
-
-Se utilizaron consultas SQL para obtener métricas clave de la base de datos.
-
-Entre los análisis realizados:
-
-* ingresos totales
-
-* Ventas por producto
-
-* Ventas por empleado
-
-* Ventas por cliente
-
-* Ventas por mes
-
-* Ejemplo de consulta SQL:
-``` bash
-SELECT 
-    p.ProductName,
-    SUM(p.Price * od.Quantity) AS total_sales
-FROM OrderDetails od
-JOIN Products p 
-    ON od.ProductID = p.ProductID
-GROUP BY p.ProductID, p.ProductName
-ORDER BY total_sales DESC
-LIMIT 10;
-```
 
 ---
 
-2️⃣ Python — Análisis Exploratorio
+### 🚀 Skills Demonstrated
 
-Python fue utilizado para conectarse a la base de datos y realizar un análisis exploratorio utilizando Pandas.
+Este proyecto demuestra habilidades en:
 
-También se generaron gráficos con Matplotlib para visualizar:
+SQL y bases de datos relacionales.
 
-* Productos más vendidos
+Análisis exploratorio de datos.
 
-* Ventas por empleado
+Python para análisis de datos.
 
-* Ventas mensuales
+Visualización de datos.
 
-* Clientes con mayores compras
+Construcción de dashboards en Power BI.
 
-Ejemplo de código utilizado:
-``` bash
-conn = sql.connect(DB_PATH)
-
-df_top_products = pd.read_sql_query(query_top_products, conn)
-
-df_top_products.plot(
-    x="ProductName",
-    y="total_sales",
-    kind="bar"
-)
-```
----
-
-3️⃣ Power BI — Dashboard Interactivo
-
-Finalmente se creó un dashboard en Power BI para visualizar la información de forma interactiva.
-
-El dashboard incluye:
-
-* KPI principales
-
-* Ventas totales
-
-* Órdenes totales
-
-* Unidades vendidas
-
-* Ticket promedio
-
-* Visualizaciones
-
-* Productos más vendidos
-
-* Evolución de ventas por mes
-
-El dashboard permite explorar los datos mediante filtros por:
-
-* Empleado
-
-* Producto
-
-* Mes
-
+Pensamiento analítico orientado a negocio.
 
 ---
 
-# 📊 Principales Hallazgos
+▶️ How to Run the Python Analysis
 
-A partir del análisis se pueden observar algunos patrones:
+Clonar el repositorio:
 
+<<<<<<< HEAD
 * Un pequeño grupo de productos concentra gran parte de los ingresos.
 
 * Algunos empleados generan significativamente más ventas que otros.
@@ -207,28 +280,38 @@ Este proyecto demuestra conocimientos en:
 
 1. Clonar el repositorio:
 ``` bash
+=======
+```bash
+>>>>>>> 39fdd20 (Commit 8 - Cambiando README)
 git clone https://github.com/LautaroLuchesi/sales-analysis-northwind.git
 ```
-2. Entrar al proyecto:
-``` bash
+
+Entrar al proyecto:
+
+```bash
 cd sales-analysis-northwind
 ```
-3. Instalar dependencias:
-``` bash
+
+Instalar dependencias:
+
+```bash
 pip install pandas matplotlib
 ```
-4. Ejecutar el script:
-``` bash
+
+Ejecutar el análisis:
+
+```bash
 python python/analysis_sales.py
 ```
 
 ---
 
-# 👨‍💻 Autor
+### 👨‍💻 Author
+## Lautaro Luchesi
 
-Lautaro Luchesi
+Estudiante de programación enfocado en **análisis de datos y business intelligence**
 
-Estudiante de programación enfocado en análisis de datos y desarrollo de proyectos utilizando:
+Tecnologías:
 
 * Python
 
@@ -236,10 +319,13 @@ Estudiante de programación enfocado en análisis de datos y desarrollo de proye
 
 * Power BI
 
-* Visualización de datos
+* Data Visualization
 
+<<<<<<< HEAD
 * Análisis de negocio
 
 # 🧠 Comentario final
 
 Este proyecto forma parte de mi proceso de aprendizaje en análisis de datos, aplicando herramientas comunes de la industria para transformar datos en información útil para la toma de decisiones.
+=======
+>>>>>>> 39fdd20 (Commit 8 - Cambiando README)
