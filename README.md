@@ -1,32 +1,4 @@
-<<<<<<< HEAD
-# 📊 Análisis de Ventas — Dataset Northwind
-
----
-# 📈 Vista del Dashboard
-
-<img src="images/dashboard.png" alt="DashBoard" width="800">
----
-
-# 📌 Descripción del Proyecto
-
-Este proyecto analiza datos de ventas de la base de datos Northwind utilizando SQL, Python y Power BI.
-
-El objetivo es explorar el desempeño comercial de la empresa y responder preguntas clave sobre:
-
-* Ingresos totales
-
-* Productos más vendidos
-
-* Desempeño de empleados
-
-* Clientes más importantes
-
-* Evolución de ventas en el tiempo
-
-El proyecto muestra un flujo completo de análisis de datos, desde la consulta de la base de datos hasta la creación de un dashboard interactivo.
-=======
 # 📊 Sales Analysis — Northwind Dataset
->>>>>>> 39fdd20 (Commit 8 - Cambiando README)
 
 ---
 
@@ -245,44 +217,7 @@ Pensamiento analítico orientado a negocio.
 
 Clonar el repositorio:
 
-<<<<<<< HEAD
-* Un pequeño grupo de productos concentra gran parte de los ingresos.
-
-* Algunos empleados generan significativamente más ventas que otros.
-
-* Las ventas no están distribuidas de forma uniforme entre los clientes.
-
-* Existen variaciones en las ventas según el mes.
-
-Estos hallazgos permiten entender mejor el desempeño comercial de la empresa.
-
-🚀 Habilidades Demostradas
-
-Este proyecto demuestra conocimientos en:
-
-* Consultas SQL
-
-* Análisis de datos
-
-* Manejo de bases de datos relacionales
-
-* Análisis con Python
-
-* Visualización de datos
-
-* Construcción de dashboards en Power BI
-
-* Pensamiento analítico
-
----
-
-## Cómo ejecutar el análisis en Python
-
-1. Clonar el repositorio:
-``` bash
-=======
 ```bash
->>>>>>> 39fdd20 (Commit 8 - Cambiando README)
 git clone https://github.com/LautaroLuchesi/sales-analysis-northwind.git
 ```
 
@@ -321,11 +256,3 @@ Tecnologías:
 
 * Data Visualization
 
-<<<<<<< HEAD
-* Análisis de negocio
-
-# 🧠 Comentario final
-
-Este proyecto forma parte de mi proceso de aprendizaje en análisis de datos, aplicando herramientas comunes de la industria para transformar datos en información útil para la toma de decisiones.
-=======
->>>>>>> 39fdd20 (Commit 8 - Cambiando README)
