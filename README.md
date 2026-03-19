@@ -1,4 +1,4 @@
-# 📊 Sales Analysis — Northwind Dataset
+# 📊 Análisis de ventas para identificar productos que deberían promocionarse
 
 ---
 
