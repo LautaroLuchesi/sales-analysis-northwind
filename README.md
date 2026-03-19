@@ -245,18 +245,16 @@ python python/analysis_sales.py
 
 ---
 
-### 👨‍💻 Author
-## Lautaro Luchesi
+# Autor
 
-Estudiante de programación enfocado en **análisis de datos y business intelligence**
+**Lautaro Luchesi**
 
-Tecnologías:
+Actualmente desarrollando proyectos de portafolio orientados a:
 
-* Python
+- Limpieza y análisis de datos
+- SQL
+- Python (Pandas)
+- Visualización de datos
 
-* SQL
-
-* Power BI
-
-* Data Visualization
-
+LinkedIn:
+https://www.linkedin.com/in/lautaro-luchesi-1b5819329/
