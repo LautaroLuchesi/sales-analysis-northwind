@@ -256,5 +256,5 @@ Actualmente desarrollando proyectos de portafolio orientados a:
 - Python (Pandas)
 - Visualización de datos
 
-LinkedIn:
+LinkedIn:  
 https://www.linkedin.com/in/lautaro-luchesi-1b5819329/
